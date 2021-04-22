@@ -1,0 +1,16 @@
+body {
+  background-color: rgb(52, 55, 61);
+  color: white;
+}
+
+.App {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 85vh;
+  h2 {
+    font-size: 7em;
+    margin: 10px 10px 10px 0px;
+  }
+}

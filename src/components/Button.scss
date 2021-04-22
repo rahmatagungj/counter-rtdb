@@ -1,0 +1,24 @@
+button {
+  border: none;
+  background-color: #ff9a0c;
+  padding: 10px 20px 10px 20px;
+  border-radius: 0.3em;
+  color: white;
+  font-size: 2em;
+  margin: 2px;
+  min-width: 100px;
+  text-overflow: clip;
+  transition: transform 0.1s ease;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    transform: scale(1.03);
+    background-color: #ffaa33;
+  }
+  &.reset {
+    width: 98.5%;
+    font-size: 1.75em;
+  }
+}
