@@ -12,5 +12,9 @@ body {
   h2 {
     font-size: 7em;
     margin: 10px 10px 10px 0px;
+    transition: all 0.2s ease-in-out;
+    &.zero {
+      color: rgb(255, 37, 37);
+    }
   }
 }

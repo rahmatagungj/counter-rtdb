@@ -21,7 +21,11 @@ function App() {
 
   return (
     <div className="App">
-      {!loading ? <h2>{count}</h2> : "Loading ..."}
+      {!loading ? (
+        <h2 className={count < 1 ? "zero" : null}>{count}</h2>
+      ) : (
+        "Loading ..."
+      )}
       <Button setCount={setCount} count={count} db={db} loading={loading} />
     </div>
   );
