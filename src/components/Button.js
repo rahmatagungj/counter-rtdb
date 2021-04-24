@@ -6,23 +6,23 @@ const Button = ({ count, setCount, db, loading }) => {
     db.update({ value: val });
   };
 
-  const HandlePlus = () => {
+  const HandlePlus = async () => {
     if (!loading) {
-      updateCount(count + 1);
+      await updateCount(count + 1);
       setCount(count + 1);
     }
   };
 
-  const HandleMinus = () => {
+  const HandleMinus = async () => {
     if (!loading && count !== 0) {
-      updateCount(count - 1);
+      await updateCount(count - 1);
       setCount(count - 1);
     }
   };
 
-  const HandleReset = () => {
+  const HandleReset = async () => {
     if (!loading) {
-      updateCount(0);
+      await updateCount(0);
       setCount(0);
     }
   };
